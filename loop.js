@@ -11,13 +11,13 @@ var intMax, intMin, intRandom, intGuess, intCount;
  * number is at least 0.
 */
 intMin = parseInt (prompt("Choose the lowest number (but no lower then 0) in your guessing range:"));
-while (isNAN(intMin)|| (intMin<0))
+while (isNaN(intMin)|| (intMin<0))
 {
     intMin = parseInt(prompt("I'm sorry but your lowest number choice is invalid. \n" + "Please choose the lowest number (but no lower than 0) in your guessing range:"));
 }
 document.write ("Lowest number = " + intMin);
 
- /The following line prompts the user to enter their highest number * and then validates that the user entered an actual number and make sure that the * number is at least 2 more than the minimum (so that there is some guessing involved). */;
+/The following line prompts the user to enter their highest number * and then validates that the user entered an actual number and make sure that the * number is at least 2 more than the minimum (so that there is some guessing involved). */;
 
 intMax = parseInt (prompt("Choose the largest number in your guessing range:"));
 while (isNaN(intMax)|| (intMax > intMin + 2))
